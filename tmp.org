@@ -1,0 +1,63 @@
+#+title: Tmp
+
+* java babel programming
+
+** Starter task
+
+#+begin_src java :results output
+int apples = 10;
+System.out.println("There are 10 apples");
+apples = apples + 5;
+System.out.println("New number of apples " + apples);
+
+double $amount = 1000;
+System.out.println($amount);
+#+end_src
+
+#+RESULTS:
+: There are 10 apples
+: New number of apples 15
+: 1000.0
+
+** Operators
+
+java has a bunch of mathematical operators
+
+#+begin_src java :results output
+/* comments to comment my code */
+/* who does that anyways */
+double weightKG = 61d;
+double weightLBS = weightKG * 2.20462d;
+weightKG = weightKG + 72;
+weightKG -= 60;
+
+// Find the remainder of weightKg divided by 5
+double remainder = weightKG % 5;
+
+System.out.println("Weight in KG: " + weightKG);
+System.out.println("Weight in LBS: " + weightLBS);
+System.out.println("Remainder: " + remainder);
+#+end_src
+
+#+RESULTS:
+: Weight in KG: 73.0
+: Weight in LBS: 134.48182
+: Remainder: 3.0
+
+order of operations is also important to remember:
+#+begin_src  java :results value
+int y = 10;
+int x = y * 3 + 5;
+
+x = x++ * 6 + 4 * 10 / 2;
+return x;
+#+end_src
+
+#+RESULTS:
+: 230
+
+1. Increment, decrement
+2. Multiply, divide, remainder
+3. Add, subtract
+4. Comparison
+5. Assignment
