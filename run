@@ -1,0 +1,10 @@
+#!/usr/bin/sh
+
+BUILD_SCRIPT="./build"
+"$BUILD_SCRIPT"
+
+OUTPUT_DIR="target"
+JAR_NAME="javaib.jar"
+MAIN_CLASS="tech.wyli.javaib.Main"
+
+java -cp "$OUTPUT_DIR/$JAR_NAME" "$MAIN_CLASS"

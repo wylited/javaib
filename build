@@ -1,0 +1,12 @@
+#!/usr/bin/sh
+
+SOURCE_DIR="src"
+OUTPUT_DIR="target"
+JAR_NAME="javaib.jar"
+
+rm -rf "$OUTPUT_DIR"
+mkdir "$OUTPUT_DIR"
+
+javac -d "$OUTPUT_DIR" "$SOURCE_DIR"/tech/wyli/javaib/Main.java
+
+jar cfe "$OUTPUT_DIR/$JAR_NAME" tech.wyli.javaib.Main -C "$OUTPUT_DIR" .

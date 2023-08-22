@@ -1,0 +1,7 @@
+#+title: Readme
+
+* Introduction to Java for the IB diploma.
+This repository contains code that explains introductory concepts of Java (version 17).
+
+Examples are made with org mode, babel and java source code blocks.
+See further [[wikipedia:https://en.wikipedia.org/wiki/Literate_programming][Literate Programming.]]
